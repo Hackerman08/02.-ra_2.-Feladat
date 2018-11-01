@@ -11,7 +11,8 @@ public class Feladat_2 {
         
         int szélességét;
         int magasságát;
-        double terület;
+        int terület;
+        double db;
         Scanner input = new Scanner(System.in);
         System.out.println("Kérem adja meg a medence szélességét,: ");
        
@@ -20,9 +21,10 @@ public class Feladat_2 {
          System.out.println("Kérem adja meg a medence magasságát: ");
         
         magasságát= input.nextInt();
+        terület=szélességét*magasságát;
+        db=terület/0.04;
         
-        
-        System.out.println("Szükséges csempe mennyiség: ");
+        System.out.println("Szükséges csempe mennyiség: "+db +"db"+ " "+"Terület"+ " "+terület+"m3");
     }
     
 }
